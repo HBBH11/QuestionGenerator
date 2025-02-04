@@ -60,3 +60,18 @@ streamlit run app.py
 
 # Contribution
 Contributions, bug reports, and feature requests are welcome. Please open an issue or submit a pull request.
+
+# PS : 
+You have to add "type, project_id, private_key_id, private_key, client_email, client_id, auth_uri, token_uri & auth_provider_x509_cert_url " from your firebase, like this one :
+
+type = "service_account"
+project_id = "datailab-c93d6"
+private_key_id = "3280024b0*****************0e2f0"
+private_key = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5Hncjq/rqIlIe\nA31ZrwRNnDtUhwkVKw1Ee5w4farg9zreC89T8VzgoNdZV7+tStxgiykx8EhFLHaW\nbcfiwkFKRd3ZZMOkuM+jdUAwMFZsI6lT3h5Htw/lRmi/OVoQfP/jiH7CAEG4+zat\ngEeIFTg+K1fHtUb9jlu1xIVk***********************************************MV1EQvKe0tCjSdu4=\n-----END PRIVATE KEY-----\n"
+client_email = "firebase-adminsdk-mp0av@datailab-c93d6.iam.gserviceaccount.com"
+client_id = "112765279431227463150"
+auth_uri = "https://accounts.google.com/o/oauth2/auth"
+token_uri = "https://oauth2.googleapis.com/token"
+auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
+client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-mp0av%40datailab-c93d6.iam.gserviceaccount.com"
+universe_domain = "googleapis.com"
