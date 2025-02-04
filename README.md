@@ -119,3 +119,11 @@ auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
 client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-mp0av%40datailab-c93d6.iam.gserviceaccount.com"
 
 universe_domain = "googleapis.com"
+
+# Database
+Database used is Firebase.
+
+Collection name is questions (category, choices, answer_text, question_text, image_url)
+
+# PS : 
+If the question has an image or more the column image_yrl must be added else it is not a mandatory.
