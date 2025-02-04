@@ -35,9 +35,13 @@ Visualization (12 questions)
 # Quiz Mechanics
 
 Total Questions: 40
+
 Passing Threshold: 70%
+
 Randomized question selection
+
 Immediate feedback on submitted answers
+
 
 # Performance Metrics
 
@@ -65,17 +69,28 @@ Immediate feedback on submitted answers
 # Setup Requirements
 
 Firebase project
+
 Firestore database with questions
+
 Firebase service account credentials
+
 Streamlit secrets configuration
+
 Python 3.8+
+
 Required Python libraries (see requirements.txt)
 
+
 # Installation
+
 git clone https://github.com/yourusername/QuestionGenerator.git
+
 cd QuestionGenerator
+
 pip install -r requirements.txt
+
 streamlit run QuestionGenerator.py
+
 
 # Contribution
 Contributions, bug reports, and feature requests are welcome. Please open an issue or submit a pull request.
