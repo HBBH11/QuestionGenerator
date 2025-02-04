@@ -83,7 +83,7 @@ Required Python libraries (see requirements.txt)
 
 # Installation
 
-git clone https://github.com/yourusername/QuestionGenerator.git
+git clone https://github.com/HBBH11/QuestionGenerator.git
 
 cd QuestionGenerator
 
