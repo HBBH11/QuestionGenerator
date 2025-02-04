@@ -72,10 +72,10 @@ Python 3.8+
 Required Python libraries (see requirements.txt)
 
 # Installation
-git clone https://github.com/yourusername/pl300-quiz-app.git
-cd pl300-quiz-app
+git clone https://github.com/yourusername/QuestionGenerator.git
+cd QuestionGenerator
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run QuestionGenerator.py
 
 # Contribution
 Contributions, bug reports, and feature requests are welcome. Please open an issue or submit a pull request.
