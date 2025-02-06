@@ -98,9 +98,6 @@ Schema:
 - ❓ question_text
 - 🖼️ image_url (optional)
 
-## 🔄 Application Flow
-
-![Quiz Generator Workflow](path-to-your-workflow-svg)
 
 ## 🤝 Contributing
 
