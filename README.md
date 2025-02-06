@@ -1,129 +1,117 @@
-# QuestionGenerator
+# ✨ QuestionGenerator - PL-300 Certification Quiz
 
-# PL-300 Certification Quiz Application
-Overview
-This Streamlit-based web application is a comprehensive quiz tool designed to help students prepare for the Microsoft Power BI Data Analyst (PL-300) certification exam. The application fetches questions from Firebase, randomly samples questions across different categories, and provides an interactive quiz experience with detailed performance analysis.
-Key Features
+A comprehensive quiz application designed to help students prepare for the Microsoft Power BI Data Analyst (PL-300) certification exam.
 
-Random question sampling across 4 exam categories
-Support for single and multiple-choice questions
-Image support for question illustrations
-Real-time answer tracking
-Comprehensive performance analytics
-Category-wise performance breakdown
-Interactive visualization of quiz results
+## 🎯 Overview
 
-# Technologies Used
+This Streamlit-based web application provides an interactive quiz experience with detailed performance analysis, pulling questions from Firebase and offering real-time feedback.
 
-Streamlit
-Firebase
-Plotly
-Matplotlib
-Python
+![Performance Overview](https://github.com/user-attachments/assets/b5f64df3-28d1-4734-9742-f8d9970c3393)
 
-# Categories Covered
+## ⭐ Key Features
 
-Prepare Data (12 questions)
+- 🎲 Random question sampling across 4 exam categories
+- ✅ Support for single and multiple-choice questions
+- 🖼️ Image support for question illustrations
+- ⚡ Real-time answer tracking
+- 📊 Comprehensive performance analytics
+- 📈 Category-wise performance breakdown
+- 📉 Interactive visualization of quiz results
 
-Model Data (10 questions)
+## 🛠️ Technologies Used
 
-Power BI Service (6 questions)
+- 🌐 **Streamlit**: Web interface
+- 🔥 **Firebase**: Database
+- 📊 **Plotly**: Data visualization
+- 📈 **Matplotlib**: Charting
+- 🐍 **Python**: Core logic
 
-Visualization (12 questions)
+## 📚 Categories Covered
 
+- 📝 Prepare Data (12 questions)
+- 🔄 Model Data (10 questions)
+- ☁️ Power BI Service (6 questions)
+- 📊 Visualization (12 questions)
 
-# Quiz Mechanics
+## ⚙️ Quiz Mechanics
 
-Total Questions: 40
+- 📋 Total Questions: 40
+- 🎯 Passing Threshold: 70%
+- 🎲 Randomized question selection
+- ⚡ Immediate feedback
 
-Passing Threshold: 70%
+## 📊 Performance Metrics
 
-Randomized question selection
+### 📈 Performance Visualization
+![Gauge Chart](https://github.com/user-attachments/assets/24994842-681e-4883-8945-cf4f0a208964)
 
-Immediate feedback on submitted answers
+### 📊 Category Performance
+![Category Performance](https://github.com/user-attachments/assets/003f36e3-87c7-4c0c-8863-181c06b8c4f9)
 
+### ✅ Question Review
+![Review 1](https://github.com/user-attachments/assets/68d2d936-69ad-4cf3-aa45-15cffce5c477)
+![Review 2](https://github.com/user-attachments/assets/25482398-6c31-4dd3-b163-d61f95ab83b1)
 
-# Performance Metrics
+## 🚀 Setup Requirements
 
-# Overall correct answer percentage
+- 🔥 Firebase project
+- 📚 Firestore database with questions
+- 🔑 Firebase service account credentials
+- ⚙️ Streamlit secrets configuration
+- 🐍 Python 3.8+
+- 📦 Required Python libraries
 
-# Pass/Fail indication
+## 📥 Installation
 
-![image](https://github.com/user-attachments/assets/b5f64df3-28d1-4734-9742-f8d9970c3393)
-
-# Gauge chart showing performance
-
-![image](https://github.com/user-attachments/assets/24994842-681e-4883-8945-cf4f0a208964)
-
-# Detailed category-wise performance histogram
-
-![image](https://github.com/user-attachments/assets/003f36e3-87c7-4c0c-8863-181c06b8c4f9)
-
-# Individual question review (correct/incorrect)
-
-![image](https://github.com/user-attachments/assets/68d2d936-69ad-4cf3-aa45-15cffce5c477)
-
-![image](https://github.com/user-attachments/assets/25482398-6c31-4dd3-b163-d61f95ab83b1)
-
-
-# Setup Requirements
-
-Firebase project
-
-Firestore database with questions
-
-Firebase service account credentials
-
-Streamlit secrets configuration
-
-Python 3.8+
-
-Required Python libraries (see requirements.txt)
-
-
-# Installation
-
+```bash
 git clone https://github.com/HBBH11/QuestionGenerator.git
-
 cd QuestionGenerator
-
 pip install -r requirements.txt
-
 streamlit run QuestionGenerator.py
+```
 
+## 🔐 Firebase Configuration
 
-# Contribution
-Contributions, bug reports, and feature requests are welcome. Please open an issue or submit a pull request.
+Add the following credentials from your Firebase project:
 
-# PS : 
-You have to add "type, project_id, private_key_id, private_key, client_email, client_id, auth_uri, token_uri & auth_provider_x509_cert_url " from your firebase, like this one :
-
+```python
 type = "service_account"
-
-project_id = "datailab-c93d6"
-
-private_key_id = "3280024b0*****************0e2f0"
-
-private_key = "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5Hncjq/rqIlIe\nA31ZrwRNnDtUhwkVKw1Ee5w4farg9zreC89T8VzgoNdZV7+tStxgiykx8EhFLHaW\nbcfiwkFKRd3ZZMOkuM+jdUAwMFZsI6lT3h5Htw/lRmi/OVoQfP/jiH7CAEG4+zat\ngEeIFTg+K1fHtUb9jlu1xIVk***********************************************MV1EQvKe0tCjSdu4=\n-----END PRIVATE KEY-----\n"
-
-client_email = "firebase-adminsdk-mp0av@datailab-c93d6.iam.gserviceaccount.com"
-
-client_id = "112765279431227463150"
-
+project_id = "your-project-id"
+private_key_id = "your-private-key-id"
+private_key = "your-private-key"
+client_email = "your-client-email"
+client_id = "your-client-id"
 auth_uri = "https://accounts.google.com/o/oauth2/auth"
-
 token_uri = "https://oauth2.googleapis.com/token"
-
 auth_provider_x509_cert_url = "https://www.googleapis.com/oauth2/v1/certs"
-
-client_x509_cert_url = "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-mp0av%40datailab-c93d6.iam.gserviceaccount.com"
-
+client_x509_cert_url = "your-cert-url"
 universe_domain = "googleapis.com"
+```
 
-# Database
-Database used is Firebase.
+## 💾 Database Structure
 
-Collection name is questions (category, choices, answer_text, question_text, image_url)
+Firebase collection: `questions`
+Schema:
+- 📑 category
+- 📝 choices
+- ✅ answer_text
+- ❓ question_text
+- 🖼️ image_url (optional)
 
-# PS : 
-If the question has an image or more the column image_url must be added else it is not a mandatory.
+## 🔄 Application Flow
+
+![Quiz Generator Workflow](path-to-your-workflow-svg)
+
+## 🤝 Contributing
+
+Contributions welcome! Please feel free to:
+- 🐛 Report bugs
+- 💡 Request features
+- 🔧 Submit pull requests
+
+## 📝 Notes
+
+- 🖼️ `image_url` field is optional for questions without images
+- 🔒 Keep your Firebase credentials secure
+- ⚠️ Don't commit sensitive information to version control
+
